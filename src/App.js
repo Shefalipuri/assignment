@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getAllPost, getSinglePost } from "./component/pages/postSlice";
+import { useDispatch } from "react-redux";
+import { getAllPost } from "./component/pages/postSlice";
 import { Home } from "./component/pages/Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";

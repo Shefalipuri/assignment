@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { createPost } from "../postSlice";
 import AllPost from "./AllPost";
-import PostCard from "./PostCard";
 export function Home({ setPostModal, postModal }) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");

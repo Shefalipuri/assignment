@@ -1,8 +1,6 @@
 .home-container {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
-  /* align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -13,6 +11,7 @@
   padding: 1rem;
   margin: 1rem 0;
   cursor: pointer;
+  background-color: rgb(227, 224, 224);
 }
 
 .post-title {
@@ -31,6 +30,7 @@
   display: flex;
   justify-content: space-around;
   padding: 1rem;
+  background-color: aliceblue;
 }
 
 .navbar > div {

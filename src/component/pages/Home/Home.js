@@ -29,12 +29,14 @@ export function Home({ setPostModal, postModal }) {
           </div>
           <div>
             <textarea
-              style={{ width: "full" }}
               placeholder="Whats on your mind ?"
               onChange={(e) => setBody(e.target.value)}
             ></textarea>
           </div>
-          <button onClick={() => postHandler()}>Post</button>
+          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+            <button onClick={() => postHandler()}>Post</button>
+            <button onClick={() => setPostModal(false)}>Cancel</button>
+          </div>
         </div>
       )}
       <AllPost />

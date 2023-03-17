@@ -57,7 +57,6 @@ const postSlice = createSlice({
       state.postStatus = "pending";
     },
     [getAllPost.fulfilled]: (state, action) => {
-      console.log(state);
       state.postStatus = "fulfilled";
       state.allPosts = action.payload;
     },
@@ -81,7 +80,7 @@ const postSlice = createSlice({
     },
     [createPost.fulfilled]: (state, action) => {
       state.postStatus = "fulfilled";
-      state.allPosts = [...state.allPosts, action.payload].reverse();
+      state.allPosts = [action.payload, ...state.allPosts];
     },
     [createPost.rejected]: (state, action) => {
       state.postStatus = "rejected";
